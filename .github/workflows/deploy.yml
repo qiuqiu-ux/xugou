@@ -31,7 +31,7 @@ jobs:
         uses: pnpm/action-setup@v4
         with:
           # 指定要使用的 pnpm 版本
-          version: 8
+          version: 9
 
       # 第三步：设置 Node.js 环境
       # 使用官方的 'setup-node' action 来安装指定版本的 Node.js
@@ -39,7 +39,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           # 指定 Node.js 的版本
-          node-version: '20'
+          node-version: '22'
           # 为 pnpm 配置依赖缓存，以加快后续运行速度
           cache: 'pnpm'
 
